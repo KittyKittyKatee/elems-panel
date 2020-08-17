@@ -1,0 +1,54 @@
+@import "../../variables";
+
+.preview {
+    width: 354px;
+    background-color: $white;
+    height: 100vh;
+    &__elems {
+        width: 354px;
+    }
+    &__main {
+        padding: 20px 12px 0;
+    }
+    &__message-block {
+       max-width: 300px;
+       padding: 12px;
+       box-sizing: border-box;
+       background-color: $message-bg;
+       border-radius: 4px;
+       margin-bottom: 10px;
+       p {
+            margin-bottom: 6px;
+            font-family: SF-Pro-Display-Regular;
+            font-size: 15px;
+            color: black;
+            &:last-child {
+                margin-bottom: 0;
+            }
+       }
+    }
+    &__btns-block {
+        margin-bottom: 20px;
+        &--col-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-row-gap: 5px;
+            grid-column-gap: 6px;
+            button {
+                width: 100%;
+                margin-bottom: 0;
+            }
+        }
+        &--right {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+
+
+.preview-header {
+    background-color: $gray;
+    padding: 20px 12px;
+    position: relative;
+}

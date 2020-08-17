@@ -1,0 +1,33 @@
+.btn-main {
+  background-color: #006ae4;
+  width: 176px;
+  height: 34px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: SF-Pro-Display-Regular;
+  padding: 8px 12px;
+  color: #fff;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  border-radius: 4px;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  margin-bottom: 5px; }
+  .btn-main:hover {
+    background-color: #0063d5; }
+  .btn-main:last-child {
+    margin-bottom: 0; }
+  .btn-main--gray {
+    width: 117px;
+    background-color: #727887; }
+    .btn-main--gray:hover {
+      background-color: #6b717f; }

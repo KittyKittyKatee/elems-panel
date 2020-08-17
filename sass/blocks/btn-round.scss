@@ -1,0 +1,42 @@
+@import "../variables";
+
+.btn-round {
+    background-color: $blue;
+    width: auto;
+    height: 40px;
+    font-size: 15px;
+    line-height: 18px;
+    font-family: SF-Pro-Display-Regular;
+    padding: 11px 15px;
+    color: $white;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    box-shadow: none;
+    appearance: none;
+    border: none;
+    border-radius: 40px;
+    transition-property: background-color;
+    transition-duration: 200ms;
+    &:hover {
+        background-color: darken($blue, 3);
+    }
+    &--outline {
+        background-color: transparent;
+        border: 1px solid $cold-gray;
+        color: $btn-gray;
+        &:hover {
+            border-color: darken($cold-gray, 10);
+            background-color: transparent;
+        }
+    }
+    &--outline-blue {
+        background-color: transparent;
+        border: 1px solid $blue;
+        color: $blue;
+        &:hover {
+            border-color: darken($blue, 10);
+            background-color: transparent;
+        }
+    }
+}

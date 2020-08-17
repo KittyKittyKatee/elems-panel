@@ -1,0 +1,62 @@
+@import "../../variables";
+
+.img-actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    &__edit {
+        width: 58px;
+        height: 30px;
+        border-radius: 4px;
+        box-shadow: 0 18px 42px 0 rgba(114, 120, 135, 0.1), 0 4px 16px 0 rgba(0, 0, 0, 0.15);
+        background-color: rgba(38, 40, 45, 0.9);
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            cursor: pointer;
+            height: 13px;
+            width: 12px;
+            &:first-child {
+                margin-right: 12px;
+            }
+        }
+    }
+    &__additionally {
+        position: absolute;
+        top: 7px;
+        right: 7px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2px;
+        cursor: pointer;
+        span {
+            width: 3px;
+            height: 3px;
+            border-radius: 3px;
+            background-color: $white;
+            display: block;
+        }
+    }
+    &__play {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 36px;
+        width: 36px;
+        border-radius: 36px;
+        background-color: $blue;
+        display: flex;
+        padding-left: 2px;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+}

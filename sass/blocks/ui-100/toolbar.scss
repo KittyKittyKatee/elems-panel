@@ -1,0 +1,263 @@
+@import "../../variables";
+
+.toolbar {
+    width: 6.2vh;
+    background-color: $bg;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    @media (max-height: 720px) {
+        width: 124px;
+    }
+    @media (max-height: 520px) {
+        width: 20vh;
+    }
+    &__main {
+        display: grid;
+        grid-template-columns: 1fr;
+        @media (max-height: 720px) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    &__bottom {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: flex-end;
+        @media (max-height: 720px) {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    &__scale-count {
+        height: 6.6vh;
+        width: 6.2vh;
+        border-bottom: 1px solid $gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: SF-Pro-Display-Semibold;
+        font-size: 15px;
+        line-height: normal;
+        color: $black;
+        margin: 0;
+        @media (max-height: 720px) {
+            height: 66px;
+            width: 62px;
+            border-left: 1px solid $gray;
+        }
+        @media (max-height: 520px) {
+            height: 11vh;
+            width: 10vh;
+        }
+    }
+    &__elem {
+        height: 6.6vh;
+        width: 6.2vh;
+        border-bottom: 1px solid $gray;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.2s;
+        @media (max-height: 720px) {
+            height: 66px;
+            width: 62px;
+            border-left: 1px solid $gray;
+            border-top: 1px solid $gray;
+        }
+        @media (max-height: 520px) {
+            height: 11vh;
+            width: 10vh;
+        }
+    }
+
+    &__elem{
+        transition: all 0.2s;
+    }
+
+    &__img {
+        background-size: contain;
+        transition: all 0.2s;
+    }
+
+    &__img--save {
+        background: url(../../../img/toolbar-icons/icon-save.svg) center no-repeat;
+        height: 24px;
+        width: 24px;
+    }
+
+    &__img--play {
+        background: url(../../../img/toolbar-icons/icon-play.svg) center no-repeat;
+        height: 24px;
+        width: 24px;
+    }
+
+    &__img--share {
+        background: url(../../../img/toolbar-icons/icon-share.svg) center no-repeat;
+        height: 24px;
+        width: 24px;
+    }
+
+    &__img--bag {
+        background: url(../../../img/toolbar-icons/icon-bag.svg) center no-repeat;
+        height: 23px;
+        width: 24px;
+    }
+
+    &__img--order {
+        background: url(../../../img/toolbar-icons/icon-order.svg) center no-repeat;
+        height: 21px;
+        width: 24px;
+    }
+
+    &__img--chart {
+        background: url(../../../img/toolbar-icons/icon-chart.svg) center no-repeat;
+        height: 23px;
+        width: 24px;
+    }
+
+    &__img--settings {
+        background: url(../../../img/toolbar-icons/icon-settings.svg) center no-repeat;
+        height: 24px;
+        width: 24px;
+    }
+
+    &__img--teamwork {
+        background: url(../../../img/toolbar-icons/icon-teamwork.svg) center no-repeat;
+        height: 24px;
+        width: 24px;
+    }
+
+    &__img--transfer {
+        background: url(../../../img/toolbar-icons/icon-teamwork.svg) center no-repeat;
+        height: 24px;
+        width: 24px;
+    }
+
+    &__img--users {
+        background: url(../../../img/toolbar-icons/icon-users.svg) center no-repeat;
+        height: 24px;
+        width: 21px;
+    }
+
+    &__img--plus {
+        background: url(../../../img/toolbar-icons/icon-plus.svg) center no-repeat;
+        height: 24px;
+        width: 24px;
+    }
+
+    &__img--map {
+        background: url(../../../img/toolbar-icons/icon-map.svg) center no-repeat;
+        height: 24px;
+        width: 24px;
+    }
+
+    &__img--minus {
+        background: url(../../../img/toolbar-icons/icon-minus.svg) center no-repeat;
+        height: 2px;
+        width: 24px;
+    }
+
+    &__elem--save:hover &__img--save{
+        background: url(../../../img/toolbar-icons-hover/icon-save.svg) center no-repeat;
+    }
+    &__elem--play:hover &__img--play{
+        background: url(../../../img/toolbar-icons-hover/icon-play.svg) center no-repeat;
+    }
+    &__elem--share:hover &__img--share{
+        background: url(../../../img/toolbar-icons-hover/icon-share.svg) center no-repeat;
+    }
+    &__elem--bag:hover &__img--bag{
+        background: url(../../../img/toolbar-icons-hover/icon-bag.svg) center no-repeat;
+    }
+    &__elem--order:hover &__img--order{
+        background: url(../../../img/toolbar-icons-hover/icon-order.svg) center no-repeat;
+    }
+    &__elem--chart:hover &__img--chart{
+        background: url(../../../img/toolbar-icons-hover/icon-chart.svg) center no-repeat;
+    }
+    &__elem--settings:hover &__img--settings{
+        background: url(../../../img/toolbar-icons-hover/icon-settings.svg) center no-repeat;
+    }
+    &__elem--teamwork:hover &__img--teamwork{
+        background: url(../../../img/toolbar-icons-hover/icon-teamwork.svg) center no-repeat;
+    }
+    &__elem--transfer:hover &__img--transfer{
+        background: url(../../../img/toolbar-icons-hover/icon-transfer.svg) center no-repeat;
+    }
+    &__elem--users:hover &__img--users{
+        background: url(../../../img/toolbar-icons-hover/icon-users.svg) center no-repeat;
+    }
+
+    &__elem--plus:hover &__img--plus{
+        background: url(../../../img/toolbar-icons-hover/icon-plus.svg) center no-repeat;
+    }
+    
+    &__elem--map:hover &__img--map{
+        background: url(../../../img/toolbar-icons-hover/icon-map.svg) center no-repeat;
+    }
+
+    &__elem--minus:hover &__img--minus{
+        background: url(../../../img/toolbar-icons-hover/icon-minus.svg) center no-repeat;
+    }
+}
+
+.active {
+    background-color: $blue;
+}
+
+.active.toolbar__elem--save .toolbar__img--save{
+    background: url(../../../img/toolbar-icons-active/icon-save.svg) center no-repeat;
+}
+
+.active.toolbar__elem--play .toolbar__img--play{
+    background: url(../../../img/toolbar-icons-active/icon-play.svg) center no-repeat;
+}
+
+.active.toolbar__elem--share .toolbar__img--share{
+    background: url(../../../img/toolbar-icons-active/icon-share.svg) center no-repeat;
+}
+
+.active.toolbar__elem--bag .toolbar__img--bag{
+    background: url(../../../img/toolbar-icons-active/icon-bag.svg) center no-repeat;
+}
+
+.active.toolbar__elem--order .toolbar__img--order{
+    background: url(../../../img/toolbar-icons-active/icon-order.svg) center no-repeat;
+}
+
+.active.toolbar__elem--chart .toolbar__img--chart{
+    background: url(../../../img/toolbar-icons-active/icon-chart.svg) center no-repeat;
+}
+
+.active.toolbar__elem--settings .toolbar__img--settings{
+    background: url(../../../img/toolbar-icons-active/icon-settings.svg) center no-repeat;
+}
+
+.active.toolbar__elem--teamwork .toolbar__img--teamwork{
+    background: url(../../../img/toolbar-icons-active/icon-teamwork.svg) center no-repeat;
+}
+
+.active.toolbar__elem--transfer .toolbar__img--transfer{
+    background: url(../../../img/toolbar-icons-active/icon-transfer.svg) center no-repeat;
+}
+
+.active.toolbar__elem--users .toolbar__img--users{
+    background: url(../../../img/toolbar-icons-active/icon-users.svg) center no-repeat;
+}
+
+.active.toolbar__elem--plus .toolbar__img--plus{
+    background: url(../../../img/toolbar-icons-active/icon-plus.svg) center no-repeat;
+}
+
+.active.toolbar__elem--map .toolbar__img--map{
+    background: url(../../../img/toolbar-icons-active/icon-map.svg) center no-repeat;
+}
+
+.active.toolbar__elem--minus .toolbar__img--minus{
+    background: url(../../../img/toolbar-icons-active/icon-minus.svg) center no-repeat;
+}
+

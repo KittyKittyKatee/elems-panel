@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/**
+ * Основные стили
+ **/
+html {
+  font-size: 18px; }
+
+body {
+  font-family: 'SF-Pro-Display-Regular', 'Helvetica', 'Arial', sans-serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  background-color: #424750; }
+
+.title-1 {
+  font-family: SF-Pro-Display-Semibold;
+  font-size: 32px;
+  color: #26282d;
+  margin-bottom: 30px; }
+
+.title-2 {
+  font-family: SF-Pro-Display-Bold;
+  font-size: 24px;
+  line-height: normal;
+  color: #26282d;
+  margin: 0; }
+
+.title-3 {
+  font-family: SF-Pro-Display-Bold;
+  font-size: 21px;
+  line-height: normal;
+  color: #26282d;
+  margin: 0;
+  margin-bottom: 10px; }
+
+.title-4 {
+  font-family: SF-Pro-Display-Bold;
+  font-size: 15px;
+  line-height: normal;
+  color: #26282d;
+  margin: 0;
+  margin-bottom: 20px; }
+
+.title-6 {
+  font-family: SF-Pro-Display-Bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #26282d;
+  margin: 0; }
+
+.text-15 {
+  font-family: SF-Pro-Display-Regular;
+  font-size: 15px;
+  color: #26282d;
+  margin: 0; }
+
+.container {
+  position: fixed;
+  height: 100vh;
+  width: calc(100vw - 76px);
+  top: 0;
+  right: 0; }
+
+.flex {
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 0;
+  margin-left: auto; }
+
+.small-text p {
+  font-family: SF-Pro-Display-Regular;
+  font-size: 14px;
+  line-height: 1.29;
+  color: black;
+  margin-bottom: 5px; }
+  .small-text p:last-child {
+    margin-bottom: 0; }

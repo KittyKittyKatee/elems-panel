@@ -1,0 +1,220 @@
+.toolbar {
+  width: 6.2vh;
+  background-color: #f6f8fc;
+  height: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  @media (max-height: 720px) {
+    .toolbar {
+      width: 124px; } }
+  @media (max-height: 520px) {
+    .toolbar {
+      width: 20vh; } }
+  .toolbar__main {
+    display: grid;
+    grid-template-columns: 1fr; }
+    @media (max-height: 720px) {
+      .toolbar__main {
+        grid-template-columns: 1fr 1fr; } }
+  .toolbar__bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end; }
+    @media (max-height: 720px) {
+      .toolbar__bottom {
+        grid-template-columns: 1fr 1fr; } }
+  .toolbar__scale-count {
+    height: 6.6vh;
+    width: 6.2vh;
+    border-bottom: 1px solid #eeeff2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: SF-Pro-Display-Semibold;
+    font-size: 15px;
+    line-height: normal;
+    color: #26282d;
+    margin: 0; }
+    @media (max-height: 720px) {
+      .toolbar__scale-count {
+        height: 66px;
+        width: 62px;
+        border-left: 1px solid #eeeff2; } }
+    @media (max-height: 520px) {
+      .toolbar__scale-count {
+        height: 11vh;
+        width: 10vh; } }
+  .toolbar__elem {
+    height: 6.6vh;
+    width: 6.2vh;
+    border-bottom: 1px solid #eeeff2;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; }
+    @media (max-height: 720px) {
+      .toolbar__elem {
+        height: 66px;
+        width: 62px;
+        border-left: 1px solid #eeeff2;
+        border-top: 1px solid #eeeff2; } }
+    @media (max-height: 520px) {
+      .toolbar__elem {
+        height: 11vh;
+        width: 10vh; } }
+  .toolbar__elem {
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; }
+  .toolbar__img {
+    background-size: contain;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; }
+  .toolbar__img--save {
+    background: url(../../../img/toolbar-icons/icon-save.svg) center no-repeat;
+    height: 24px;
+    width: 24px; }
+  .toolbar__img--play {
+    background: url(../../../img/toolbar-icons/icon-play.svg) center no-repeat;
+    height: 24px;
+    width: 24px; }
+  .toolbar__img--share {
+    background: url(../../../img/toolbar-icons/icon-share.svg) center no-repeat;
+    height: 24px;
+    width: 24px; }
+  .toolbar__img--bag {
+    background: url(../../../img/toolbar-icons/icon-bag.svg) center no-repeat;
+    height: 23px;
+    width: 24px; }
+  .toolbar__img--order {
+    background: url(../../../img/toolbar-icons/icon-order.svg) center no-repeat;
+    height: 21px;
+    width: 24px; }
+  .toolbar__img--chart {
+    background: url(../../../img/toolbar-icons/icon-chart.svg) center no-repeat;
+    height: 23px;
+    width: 24px; }
+  .toolbar__img--settings {
+    background: url(../../../img/toolbar-icons/icon-settings.svg) center no-repeat;
+    height: 24px;
+    width: 24px; }
+  .toolbar__img--teamwork {
+    background: url(../../../img/toolbar-icons/icon-teamwork.svg) center no-repeat;
+    height: 24px;
+    width: 24px; }
+  .toolbar__img--transfer {
+    background: url(../../../img/toolbar-icons/icon-teamwork.svg) center no-repeat;
+    height: 24px;
+    width: 24px; }
+  .toolbar__img--users {
+    background: url(../../../img/toolbar-icons/icon-users.svg) center no-repeat;
+    height: 24px;
+    width: 21px; }
+  .toolbar__img--plus {
+    background: url(../../../img/toolbar-icons/icon-plus.svg) center no-repeat;
+    height: 24px;
+    width: 24px; }
+  .toolbar__img--map {
+    background: url(../../../img/toolbar-icons/icon-map.svg) center no-repeat;
+    height: 24px;
+    width: 24px; }
+  .toolbar__img--minus {
+    background: url(../../../img/toolbar-icons/icon-minus.svg) center no-repeat;
+    height: 2px;
+    width: 24px; }
+  .toolbar__elem--save:hover .toolbar__img--save {
+    background: url(../../../img/toolbar-icons-hover/icon-save.svg) center no-repeat; }
+  .toolbar__elem--play:hover .toolbar__img--play {
+    background: url(../../../img/toolbar-icons-hover/icon-play.svg) center no-repeat; }
+  .toolbar__elem--share:hover .toolbar__img--share {
+    background: url(../../../img/toolbar-icons-hover/icon-share.svg) center no-repeat; }
+  .toolbar__elem--bag:hover .toolbar__img--bag {
+    background: url(../../../img/toolbar-icons-hover/icon-bag.svg) center no-repeat; }
+  .toolbar__elem--order:hover .toolbar__img--order {
+    background: url(../../../img/toolbar-icons-hover/icon-order.svg) center no-repeat; }
+  .toolbar__elem--chart:hover .toolbar__img--chart {
+    background: url(../../../img/toolbar-icons-hover/icon-chart.svg) center no-repeat; }
+  .toolbar__elem--settings:hover .toolbar__img--settings {
+    background: url(../../../img/toolbar-icons-hover/icon-settings.svg) center no-repeat; }
+  .toolbar__elem--teamwork:hover .toolbar__img--teamwork {
+    background: url(../../../img/toolbar-icons-hover/icon-teamwork.svg) center no-repeat; }
+  .toolbar__elem--transfer:hover .toolbar__img--transfer {
+    background: url(../../../img/toolbar-icons-hover/icon-transfer.svg) center no-repeat; }
+  .toolbar__elem--users:hover .toolbar__img--users {
+    background: url(../../../img/toolbar-icons-hover/icon-users.svg) center no-repeat; }
+  .toolbar__elem--plus:hover .toolbar__img--plus {
+    background: url(../../../img/toolbar-icons-hover/icon-plus.svg) center no-repeat; }
+  .toolbar__elem--map:hover .toolbar__img--map {
+    background: url(../../../img/toolbar-icons-hover/icon-map.svg) center no-repeat; }
+  .toolbar__elem--minus:hover .toolbar__img--minus {
+    background: url(../../../img/toolbar-icons-hover/icon-minus.svg) center no-repeat; }
+
+.active {
+  background-color: #006ae4; }
+
+.active.toolbar__elem--save .toolbar__img--save {
+  background: url(../../../img/toolbar-icons-active/icon-save.svg) center no-repeat; }
+
+.active.toolbar__elem--play .toolbar__img--play {
+  background: url(../../../img/toolbar-icons-active/icon-play.svg) center no-repeat; }
+
+.active.toolbar__elem--share .toolbar__img--share {
+  background: url(../../../img/toolbar-icons-active/icon-share.svg) center no-repeat; }
+
+.active.toolbar__elem--bag .toolbar__img--bag {
+  background: url(../../../img/toolbar-icons-active/icon-bag.svg) center no-repeat; }
+
+.active.toolbar__elem--order .toolbar__img--order {
+  background: url(../../../img/toolbar-icons-active/icon-order.svg) center no-repeat; }
+
+.active.toolbar__elem--chart .toolbar__img--chart {
+  background: url(../../../img/toolbar-icons-active/icon-chart.svg) center no-repeat; }
+
+.active.toolbar__elem--settings .toolbar__img--settings {
+  background: url(../../../img/toolbar-icons-active/icon-settings.svg) center no-repeat; }
+
+.active.toolbar__elem--teamwork .toolbar__img--teamwork {
+  background: url(../../../img/toolbar-icons-active/icon-teamwork.svg) center no-repeat; }
+
+.active.toolbar__elem--transfer .toolbar__img--transfer {
+  background: url(../../../img/toolbar-icons-active/icon-transfer.svg) center no-repeat; }
+
+.active.toolbar__elem--users .toolbar__img--users {
+  background: url(../../../img/toolbar-icons-active/icon-users.svg) center no-repeat; }
+
+.active.toolbar__elem--plus .toolbar__img--plus {
+  background: url(../../../img/toolbar-icons-active/icon-plus.svg) center no-repeat; }
+
+.active.toolbar__elem--map .toolbar__img--map {
+  background: url(../../../img/toolbar-icons-active/icon-map.svg) center no-repeat; }
+
+.active.toolbar__elem--minus .toolbar__img--minus {
+  background: url(../../../img/toolbar-icons-active/icon-minus.svg) center no-repeat; }

@@ -1,0 +1,58 @@
+<section class="el-panel el-panel-btns">
+    <div class="el-panel__elems scroll">
+      <div class="el-panel__header el-header">
+        <h2 class="el-header__title title-2">Кнопки</h2>
+        <a class="el-header__tip-title text-15">Как это использовать?</a>
+        <button class="el-panel__close-btn close-btn">
+          <img src="img/icon-close-btn.svg" alt="">
+        </button>
+      </div>
+      <div class="el-panel__main">
+        @@include("btns.html")
+        <div class="el-panel__elem">
+          <h3 class="el-panel__subtitle">Выравнивание кнопок</h3>
+          <div class="el-panel__tabs tabs">
+            <input type="checkbox" name="align" id="align">
+            <label class="tabs__label" for="align">
+              <div class="tabs__right active-tab">Горизонтальная</div>
+              <div class="tabs__left">Вертикальная</div>
+              <div class="tabs__active"></div>
+            </label>
+          </div>
+        </div>
+        <div class="el-panel__elem el-panel__elem--hr">
+          <h3 class="el-panel__subtitle">Опция поиска</h3>
+          <div class="el-panel__radio radio">
+            <input type="checkbox" name="option-search" id="option-search">
+            <label class="radio__label" for="option-search">
+              <div class="radio__left active-radio"></div>
+              <div class="radio__right"></div>
+              <div class="radio__active"></div>
+            </label>
+          </div>
+        </div>
+        <div class="el-panel__elem el-panel__elem--hr">
+          <h3 class="el-panel__subtitle">Множественный выбор</h3>
+          <div class="el-panel__radio radio">
+            <input type="checkbox" name="multi-select" id="multi-select">
+            <label class="radio__label" for="multi-select">
+              <div class="radio__right active-radio"></div>
+              <div class="radio__left"></div>
+              <div class="radio__active"></div>
+            </label>
+          </div>
+        </div>
+        <div class="el-panel__elem el-panel__elem">
+          <h3 class="el-panel__subtitle">Сохранить ответы в поле</h3>
+          <div class="el-panel__input">
+            <input type="text" name="save-answers" id="save-answers"
+              placeholder="@name" value="@name">
+          </div>
+        </div>
+      </div>
+      <div class="el-panel__btns">
+        <button class="el-panel__btn btn-round">Сохранить</button>
+        <button class="el-panel__btn btn-round btn-round--outline-blue">Отмена</button>
+      </div>
+    </div>
+  </section>

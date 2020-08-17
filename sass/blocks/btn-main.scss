@@ -1,0 +1,35 @@
+@import "../variables";
+
+.btn-main {
+    background-color: $blue;
+    width: 176px;
+    height: 34px;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: SF-Pro-Display-Regular;
+    padding: 8px 12px;
+    color: $white;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    box-shadow: none;
+    appearance: none;
+    border: none;
+    border-radius: 4px;
+    transition-property: background-color;
+    transition-duration: 200ms;
+    &:hover {
+        background-color: darken($blue, 3);
+    }
+    margin-bottom: 5px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &--gray {
+        width: 117px;
+        background-color: $dark-gray;
+        &:hover {
+            background-color: darken($dark-gray, 3);
+        }
+    }
+}

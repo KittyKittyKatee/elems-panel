@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title></title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <script src="js/all.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="flex">
+        <section class="side-bar">
+          <nav class="side-bar__nav">
+            <a class="side-bar__home" href="#">
+              <img
+                src="img/bitmap.png"
+                srcset="img/bitmap@2x.png 2x, img/bitmap@3x.png 3x"
+                />
+            </a>
+            <a class="side-bar__my-profile" href="#">
+              <img src="/img/side-bar/my-bot.svg" />
+            </a>
+          </nav>
+        </section>
+        @@include("./blocks/ui-100/elems-panel.html")
+        <div class="workspace">
+          @@include("./blocks/ui-100/start-bot.html")
+          @@include("./blocks/ui-100/btn-delete.html")
+          @@include("./blocks/ui-100/message.html")
+          @@include("./blocks/ui-100/btns.html")
+          @@include("./blocks/ui-101/frame-bot-folders.html")
+        </div>
+        @@include("./blocks/ui-101/preview.html")
+        @@include("./blocks/ui-100/toolbar.html")
+      </div>
+    </div>
+  </body>
+</html>

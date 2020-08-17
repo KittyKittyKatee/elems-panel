@@ -1,0 +1,38 @@
+<section class="load-form">
+  <div class="load-form__wrap">
+    <div class="load-form__header">
+      <h3 class="load-form__title">Загрузить фото или видео</h3>
+    </div>
+    <div class="load-form__main">
+      <form action="">
+        <div class="load-form__elem">
+          <label for="file">Загрузить ваш файл</label>
+          <div class="load-form__choose-file choose-file">
+            <input type="file" class="my" id="file" name="file" multiple>
+            <div class="choose-file__input">файл не выбран</div>
+            <label class="choose-file__btn" for="file">выбрать</label>
+          </div>
+        </div>
+        <div class="load-form__elem">
+          <label for="url">Или укажите URL</label>
+          <input type="text" name="url" id="url" placeholder="https://…" />
+        </div>
+        <div class="load-form__elem">
+          <label for="YouTube-url">Или укажите YouTube URL</label>
+          <input
+            type="text"
+            name="YouTube-url"
+            id="YouTube-url"
+            placeholder="https://…"
+          />
+        </div>
+        <div class="load-form__btns">
+          <button class="load-form__btn btn-round">Сохранить</button>
+          <button class="load-form__btn btn-round btn-round--outline">
+            Отмена
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

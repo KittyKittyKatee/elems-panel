@@ -1,0 +1,19 @@
+.text-block {
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 12px 12px 14px;
+  position: relative;
+  margin-bottom: 10px; }
+  .text-block__paragraph {
+    margin-bottom: 12px; }
+    .text-block__paragraph:last-child {
+      margin-bottom: 0; }
+  .text-block__title {
+    margin-bottom: 5px;
+    font-family: SF-Pro-Display-Bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: #26282d;
+    margin: 0; }
